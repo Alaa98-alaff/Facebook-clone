@@ -9,6 +9,4 @@ cd facebook clone/
 npm start
 ```
 ## Used Technologies
-```
-Nunjucks Scss
-```
+``` Nunjucks Scss ```
