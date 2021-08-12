@@ -1,4 +1,10 @@
-.main-container {
-  display: flex;
+.body-container {
   background-color: #f0f2f5;
+  display: flex;
+}
+
+.main-container {
+  width: 770px;
+  display: flex;
+  justify-content: center;
 }
