@@ -1,6 +1,6 @@
 @import "./globals/variables";
 @import "./base.scss";
-@import "./searchBox";
-@import "./pagesContainer.scss";
-@import "./notificationContainer.scss";
+@import "./header styles/searchBox";
+@import "./header styles/pagesContainer.scss";
+@import "./header styles/notificationContainer.scss";
 @import "./header.scss";
