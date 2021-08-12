@@ -1,0 +1,38 @@
+.pages-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pages-container {
+    padding-left: 110px;
+    padding-right: 110px;
+    display: flex;
+    align-items: center;
+  }
+
+  .page {
+    width: 111.5px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin-left: 8px;
+
+    &:hover {
+      background-color: $box-background;
+      transition: all 0.4s;
+    }
+
+    &__logo {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+.active {
+  background-color: $blue-color;
+}
