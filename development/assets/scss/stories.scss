@@ -67,33 +67,10 @@
   font-weight: bold;
 }
 
-.more-stories {
-  position: absolute;
-  left: 970;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 50px;
-  border: 0.5px solid rgb(177, 172, 172);
-  cursor: pointer;
-  transition: all 0.4s;
-
-  &:hover {
-    background-color: rgb(231, 231, 231);
-    transition: all 0.4s;
-  }
-
-  &__img {
-    width: 20px;
-    height: 20px;
-  }
-}
-
 .user-image {
   justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
 
   &__img {
     height: 140px;

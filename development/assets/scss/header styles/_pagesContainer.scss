@@ -4,10 +4,9 @@
   justify-content: center;
 
   .pages-container {
-    padding-left: 50px;
-    padding-right: 50px;
     display: flex;
     align-items: center;
+    width: 660px;
   }
 
   .page {
@@ -19,7 +18,7 @@
     border-radius: 15px;
     transition: all 0.4s;
     cursor: pointer;
-    margin-left: 8px;
+    margin-left: 6px;
 
     &:hover {
       background-color: $box-background;
