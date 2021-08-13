@@ -1,1 +1,78 @@
+.post-container {
+  width: 500px;
+  height: 64px;
+}
 
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .title-box {
+    margin-top: 5px;
+    width: 384px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+
+    &__name {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .time-box {
+      display: flex;
+      align-items: center;
+      height: 22px;
+
+      &__time {
+        font-size: 13px;
+        color: rgb(68, 64, 64);
+      }
+
+      &__icon {
+        width: 12px;
+        height: 12px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .more-info {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $btns-bc-hover;
+      transition: all 0.4s;
+    }
+
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
