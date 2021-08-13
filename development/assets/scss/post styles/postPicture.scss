@@ -5,6 +5,7 @@
 .details-container {
   padding-left: 18px;
   padding-right: 18px;
+  padding-top: 5px;
 
   &__description {
     margin-top: 3px;
@@ -41,7 +42,7 @@
 .image-container {
   padding-top: 10px;
   &__img {
-    width: 506px;
+    width: 500px;
     height: 500px;
   }
 }
