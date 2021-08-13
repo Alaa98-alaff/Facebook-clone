@@ -1,10 +1,12 @@
 {% include "../../components/header.njk" %}
 <main class='body-container'>
     <div> 
-    {% include "../../components/asidePages.njk" %}
+       {% include "../../components/asidePages.njk" %}
     </div>
-    <div>
-        {% include "../../components/stories.njk" %}
+    <div class='main-body'>
+       {% include "../../components/stories.njk" %}
+
+       {% include "../../components/sharePost.njk" %}
     </div>
     <div>
         {% include "../../components/contacts.njk" %}
