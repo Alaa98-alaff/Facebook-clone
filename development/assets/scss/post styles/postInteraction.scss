@@ -1,1 +1,76 @@
+.reaction-container {
+  height: 95px;
+}
 
+.interaction-container {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ced0d4;
+  justify-content: space-between;
+
+  .likes-box {
+    width: 360px;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      margin-right: 10px;
+      width: 18px;
+      height: 18px;
+      padding-bottom: 2px;
+    }
+
+    &__likes {
+      color: rgb(65, 64, 64);
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__comments {
+    color: rgb(65, 64, 64);
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.reacting-container {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+
+  .add-react {
+    height: 40px;
+    border-radius: 5px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $notifactions-bc;
+      transition: all 0.4s;
+    }
+
+    &__icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+    }
+  }
+}
