@@ -1,1 +1,47 @@
+.picture-container {
+  width: 500px;
+}
 
+.details-container {
+  padding-left: 18px;
+  padding-right: 18px;
+
+  &__description {
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
+
+  &__hashtags {
+    color: $blue-btns;
+    display: flex;
+    align-items: center;
+
+    .hashtag {
+      text-decoration: none;
+      margin-right: 7px;
+      font-size: 15px;
+      margin-top: 8px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__translation {
+    color: grey;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.image-container {
+  padding-top: 10px;
+  &__img {
+    width: 506px;
+    height: 500px;
+  }
+}
