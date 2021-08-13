@@ -1,0 +1,72 @@
+.createRoom-container {
+  margin-top: 20px;
+  width: 500px;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 18px;
+
+  .create-room {
+    width: 160px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-right: 8px;
+    border-radius: 20px;
+    border: 1px solid #e7f3ff;
+
+    &__title {
+      color: $create-room;
+      font-weight: bold;
+    }
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+
+  .users-container {
+    display: flex;
+    align-items: center;
+
+    .userImage {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        bottom: 1;
+        right: -2;
+        content: "";
+        width: 11px;
+        height: 11px;
+        background-color: #fff;
+        border-radius: 50px;
+      }
+
+      &::after {
+        content: "1";
+        position: absolute;
+        bottom: 3;
+        right: 0;
+        content: "";
+        width: 7px;
+        height: 7px;
+        background-color: green;
+        border-radius: 50px;
+      }
+
+      &__img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
