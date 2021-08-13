@@ -1,0 +1,48 @@
+.contacts-container {
+  width: 302px;
+  margin-top: 30px;
+}
+.contacts-menu {
+  width: 270px;
+  height: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    color: grey;
+    font-weight: bold;
+    width: 154px;
+  }
+
+  .menu {
+    width: 125px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__option {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $btns-bc-hover;
+        border-radius: 50px;
+        transition: all 0.4s;
+      }
+    }
+
+    &__icon {
+      width: 18px;
+      height: 20px;
+    }
+  }
+}
