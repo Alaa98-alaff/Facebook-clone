@@ -1,3 +1,60 @@
-h1 {
-  color: red;
+.sharePost-container {
+  width: 500px;
+  height: 123px;
+  padding: 12px 16px 10px 16px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.share {
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(218, 211, 211);
+
+  &__user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  }
+
+  &__input {
+    margin-left: 10px;
+    background-color: $box-background;
+    border: none;
+    width: 420px;
+    height: 40px;
+    padding: 12px 16px 10px 18px;
+    border-radius: 20px;
+    font-size: 17px;
+  }
+}
+
+.options-container {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: center;
+
+  .share-option {
+    width: 155px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: $box-background;
+      transition: all 0.4s;
+    }
+
+    &__img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
 }
