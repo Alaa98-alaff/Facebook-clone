@@ -18,6 +18,13 @@
     margin-right: 8px;
     border-radius: 20px;
     border: 1px solid #e7f3ff;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: $box-background;
+      transition: all 0.4s;
+    }
 
     &__title {
       color: $create-room;
@@ -37,6 +44,7 @@
 
     .userImage {
       position: relative;
+      cursor: pointer;
 
       &::before {
         position: absolute;
@@ -47,6 +55,7 @@
         height: 11px;
         background-color: #fff;
         border-radius: 50px;
+        z-index: 2;
       }
 
       &::after {
@@ -59,6 +68,7 @@
         height: 7px;
         background-color: green;
         border-radius: 50px;
+        z-index: 2;
       }
 
       &__img {
@@ -66,6 +76,10 @@
         height: 40px;
         border-radius: 50px;
         margin-left: 10px;
+
+        &:hover {
+          opacity: 0.9;
+        }
       }
     }
   }
