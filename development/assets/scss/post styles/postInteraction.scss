@@ -38,6 +38,10 @@
     color: rgb(65, 64, 64);
     cursor: pointer;
 
+    @include respond(phone) {
+      width: 30%;
+    }
+
     &:hover {
       text-decoration: underline;
     }
