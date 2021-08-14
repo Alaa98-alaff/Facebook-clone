@@ -2,6 +2,16 @@
   width: 590px;
   height: 230px;
   margin-top: 30px;
+
+  @include respond(phone) {
+    width: 470px;
+  }
+
+  .deleted-story {
+    @include respond(phone) {
+      display: none;
+    }
+  }
 }
 
 .stories {
@@ -51,6 +61,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @include respond(phone) {
+    width: 100px;
+  }
 
   &__img {
     width: 111.5px;
