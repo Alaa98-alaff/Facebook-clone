@@ -5,6 +5,7 @@
 
   @include respond(phone) {
     width: 470px;
+    margin-left: 10px;
   }
 
   .deleted-story {
@@ -70,6 +71,10 @@
     width: 111.5px;
     height: 198.3px;
     border-radius: 10px;
+
+    @include respond(phone) {
+      width: 100px;
+    }
   }
 }
 
@@ -79,6 +84,10 @@
   text-align: center;
   color: #fff;
   font-weight: bold;
+
+  @include respond(phone) {
+    font-size: 13px;
+  }
 }
 
 .user-image {
@@ -98,6 +107,10 @@
   font-weight: normal;
   font-size: 15px;
   bottom: 10;
+
+  @include respond(phone) {
+    font-size: 13px;
+  }
 }
 
 .add-story-bc {

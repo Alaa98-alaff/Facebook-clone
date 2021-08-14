@@ -1,5 +1,9 @@
 .picture-container {
   width: 500px;
+
+  @include respond(phone) {
+    width: 450px;
+  }
 }
 
 .details-container {
@@ -41,6 +45,11 @@
 
 .image-container {
   padding-top: 10px;
+
+  @include respond(phone) {
+    width: 450px;
+  }
+
   &__img {
     width: 500px;
     height: 500px;

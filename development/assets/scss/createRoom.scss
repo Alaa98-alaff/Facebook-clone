@@ -10,7 +10,6 @@
 
   @include respond(phone) {
     width: 450px;
-    margin-right: 15px;
   }
 
   .create-room {
@@ -34,6 +33,11 @@
     &__title {
       color: $create-room;
       font-weight: bold;
+
+      @include respond(phone) {
+        font-size: 15px;
+        margin-left: 4px;
+      }
     }
 
     &__icon {
