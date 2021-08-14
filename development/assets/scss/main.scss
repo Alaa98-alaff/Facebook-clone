@@ -1,9 +1,9 @@
 @import "./mixins/media-query";
 @import "./globals/variables";
 @import "./base.scss";
-@import "./header styles/searchBox";
-@import "./header styles/pagesContainer.scss";
-@import "./header styles/notificationContainer.scss";
+@import "./header-styles/searchBox";
+@import "./header-styles/pagesContainer.scss";
+@import "./header-styles/notificationContainer.scss";
 @import "./header.scss";
 @import "./asidePages.scss";
 @import "./stories.scss";
@@ -12,6 +12,6 @@
 @import "./sharePost.scss";
 @import "./createRoom.scss";
 @import "./post.scss";
-@import "./post styles/postHeader.scss";
-@import "./post styles/postPicture.scss";
-@import "./post styles/postInteraction.scss";
+@import "./post-styles/postHeader.scss";
+@import "./post-styles/postPicture.scss";
+@import "./post-styles/postInteraction.scss";
