@@ -4,6 +4,10 @@
   @include respond(phone) {
     width: 450px;
   }
+
+  @include respond(small-phone) {
+    width: 350px;
+  }
 }
 
 .details-container {
@@ -50,12 +54,20 @@
     width: 450px;
   }
 
+  @include respond(small-phone) {
+    width: 350px;
+  }
+
   &__img {
     width: 500px;
     height: 500px;
 
     @include respond(phone) {
       width: 450px;
+    }
+
+    @include respond(small-phone) {
+      width: 350px;
     }
   }
 }

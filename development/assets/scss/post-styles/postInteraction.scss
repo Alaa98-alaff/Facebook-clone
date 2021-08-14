@@ -42,6 +42,10 @@
       width: 30%;
     }
 
+    @include respond(small-phone) {
+      width: 60%;
+    }
+
     &:hover {
       text-decoration: underline;
     }
@@ -65,6 +69,10 @@
     justify-content: center;
     transition: all 0.4s;
     cursor: pointer;
+
+    @include respond(small-phone) {
+      width: 80px;
+    }
 
     &:hover {
       background-color: $notifactions-bc;

@@ -8,6 +8,10 @@
   @include respond(phone) {
     width: 450px;
   }
+
+  @include respond(small-phone) {
+    width: 360px;
+  }
 }
 
 .share {
@@ -59,6 +63,17 @@
       width: 24px;
       height: 24px;
       margin-right: 8px;
+
+      @include respond(small-phone) {
+        width: 19px;
+        height: 19px;
+      }
+    }
+
+    &__title {
+      @include respond(small-phone) {
+        font-size: 12px;
+      }
     }
   }
 }

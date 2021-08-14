@@ -11,6 +11,10 @@
     padding-right: 0px;
     width: 235px;
   }
+
+  @include respond(small-phone) {
+    width: 120px;
+  }
 }
 
 .notifications__icons {
@@ -18,9 +22,18 @@
   align-items: center;
   justify-content: flex-start;
 
+  @include respond(small-phone) {
+    width: 160px;
+    justify-content: space-between;
+  }
+
   .deleted {
     @include respond(tab-port) {
       visibility: hidden;
+    }
+
+    @include respond(small-phone) {
+      display: none;
     }
   }
 }
@@ -76,6 +89,12 @@
   cursor: pointer;
   transition: all 0.4s;
 
+  @include respond(small-phone) {
+    width: 35px;
+    height: 35px;
+    margin-right: 0;
+  }
+
   &:hover {
     background-color: $btns-bc-hover;
     transition: all 0.4s;
@@ -84,5 +103,10 @@
   &__img {
     width: 20px;
     height: 20px;
+
+    @include respond(small-phone) {
+      width: 15px;
+      height: 15px;
+    }
   }
 }

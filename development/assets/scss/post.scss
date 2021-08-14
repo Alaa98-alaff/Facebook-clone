@@ -8,4 +8,8 @@
   @include respond(phone) {
     width: 450px;
   }
+
+  @include respond(small-phone) {
+    width: 350px;
+  }
 }

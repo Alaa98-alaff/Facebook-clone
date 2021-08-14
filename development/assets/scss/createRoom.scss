@@ -12,6 +12,12 @@
     width: 450px;
   }
 
+  @include respond(small-phone) {
+    width: 360px;
+    padding: 5px;
+    justify-content: space-between;
+  }
+
   .create-room {
     width: 160px;
     height: 43px;
@@ -24,6 +30,10 @@
     border: 1px solid #e7f3ff;
     cursor: pointer;
     transition: all 0.4s;
+
+    @include respond(small-phone) {
+      width: 120px;
+    }
 
     &:hover {
       background-color: $box-background;
@@ -38,18 +48,34 @@
         font-size: 15px;
         margin-left: 4px;
       }
+
+      @include respond(small-phone) {
+        font-size: 11px;
+        margin-left: -2px;
+      }
     }
 
     &__icon {
       width: 24px;
       height: 24px;
       margin-right: 8px;
+
+      @include respond(small-phone) {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 
   .users-container {
     display: flex;
     align-items: center;
+
+    .deleted-user {
+      @include respond(small-phone) {
+        display: none;
+      }
+    }
 
     .userImage {
       position: relative;
@@ -85,6 +111,11 @@
         height: 40px;
         border-radius: 50px;
         margin-left: 10px;
+
+        @include respond(small-phone) {
+          width: 33px;
+          height: 33px;
+        }
 
         &:hover {
           opacity: 0.9;

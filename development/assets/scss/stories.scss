@@ -8,8 +8,18 @@
     margin-left: 10px;
   }
 
+  @include respond(small-phone) {
+    width: 374px;
+  }
+
   .deleted-story {
     @include respond(phone) {
+      display: none;
+    }
+  }
+
+  .deleted-phone {
+    @include respond(small-phone) {
       display: none;
     }
   }
