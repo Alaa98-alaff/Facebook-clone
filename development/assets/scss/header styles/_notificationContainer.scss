@@ -6,12 +6,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include respond(tab-land) {
+    padding-right: 0px;
+    width: 235px;
+  }
 }
 
 .notifications__icons {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  .deleted {
+    @include respond(tab-port) {
+      visibility: hidden;
+    }
+  }
 }
 
 .user-container {
@@ -25,6 +36,14 @@
   border-radius: 50px;
   transition: all 0.4s;
   cursor: pointer;
+
+  @include respond(tab-land) {
+    display: none;
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
 
   &:hover {
     background-color: $notifactions-bc;

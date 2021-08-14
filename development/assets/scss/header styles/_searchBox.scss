@@ -26,6 +26,10 @@
   width: 240px;
   margin-left: 8px;
 
+  @include respond(tab-land) {
+    width: 160px;
+  }
+
   &__input {
     border: none;
     border-radius: 25px;

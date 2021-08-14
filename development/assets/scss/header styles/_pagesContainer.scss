@@ -7,6 +7,18 @@
     display: flex;
     align-items: center;
     width: 660px;
+
+    @include respond(tab-land) {
+      width: 310px;
+    }
+
+    @include respond(tab-port) {
+      width: 300px;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   .page {
@@ -19,6 +31,10 @@
     transition: all 0.4s;
     cursor: pointer;
     margin-left: 6px;
+
+    @include respond(tab-port) {
+      width: 70px;
+    }
 
     &:hover {
       background-color: $box-background;
