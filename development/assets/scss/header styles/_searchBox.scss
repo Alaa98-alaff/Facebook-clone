@@ -34,6 +34,11 @@
     height: 40px;
     background-color: $box-background;
     font-size: 15px;
+
+    @include respond(tab-land) {
+      width: 10px;
+      padding: 22px;
+    }
   }
 
   &__search {
