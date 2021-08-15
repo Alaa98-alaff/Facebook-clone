@@ -33,6 +33,24 @@
     cursor: pointer;
     margin-left: 6px;
 
+    .notifications {
+      position: absolute;
+      background-color: $notifactions;
+      top: 2;
+      right: 25;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+
+      span {
+        font-size: 11px;
+      }
+    }
+
     @include respond(tab-port) {
       width: 70px;
     }
