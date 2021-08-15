@@ -22,6 +22,7 @@
   }
 
   .page {
+    position: relative;
     width: 111.5px;
     height: 50px;
     display: flex;
@@ -49,5 +50,16 @@
 }
 
 .active {
-  background-color: $blue-color;
+  &::after {
+    position: absolute;
+    bottom: -3;
+    content: "";
+    width: 111.5;
+    height: 3px;
+    background-color: $blue-btns;
+
+    @include respond(tab-land) {
+      width: 50px;
+    }
+  }
 }
