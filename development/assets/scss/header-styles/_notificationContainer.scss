@@ -7,6 +7,37 @@
   align-items: center;
   justify-content: center;
 
+  .noti {
+    position: relative;
+  }
+
+  .notifications-count {
+    position: absolute;
+    background-color: $notifactions;
+    top: -3;
+    right: -4;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    @include respond(phone) {
+      width: 16px;
+      height: 16px;
+    }
+
+    span {
+      font-size: 11px;
+
+      @include respond(phone) {
+        font-size: 10px;
+      }
+    }
+  }
+
   @include respond(tab-land) {
     padding-right: 0px;
     width: 235px;

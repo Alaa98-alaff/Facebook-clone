@@ -46,6 +46,10 @@
       justify-content: center;
       color: #fff;
 
+      @include respond(tab-land) {
+        right: 0;
+      }
+
       span {
         font-size: 11px;
       }
