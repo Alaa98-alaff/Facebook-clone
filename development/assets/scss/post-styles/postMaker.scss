@@ -8,8 +8,16 @@
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   background-color: #fff;
   border-radius: 10px;
+  z-index: 10;
+
+  @include respond(phone) {
+    width: 325px;
+    height: 330px;
+  }
+}
+
+.hidden {
   display: none;
-  z-index: 3;
 }
 
 .title-contaner {
@@ -17,11 +25,20 @@
   padding-top: 20px;
   border-bottom: 1px solid #e5e5e5;
 
+  @include respond(phone) {
+    height: 40px;
+  }
+
   &__title {
     text-align: center;
     position: relative;
     padding: 0;
     margin: 0;
+
+    @include respond(phone) {
+      margin-top: -10px;
+      font-size: 18px;
+    }
   }
 
   .close-modal {
@@ -38,6 +55,13 @@
     transition: all 0.3s;
     cursor: pointer;
 
+    @include respond(phone) {
+      margin-top: -10px;
+      width: 28px;
+      height: 28px;
+      top: 15px;
+    }
+
     &:hover {
       background-color: $btns-bc-hover;
       transition: all 0.3s;
@@ -46,6 +70,11 @@
     &__icon {
       width: 15px;
       height: 15px;
+
+      @include respond(phone) {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 }
@@ -109,6 +138,11 @@
     font-size: 23px;
     resize: none;
 
+    @include respond(phone) {
+      font-size: 17px;
+      height: 70px;
+    }
+
     &:focus {
       outline: none;
     }
@@ -128,6 +162,11 @@
     width: 38px;
     height: 38px;
     cursor: pointer;
+
+    @include respond(phone) {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   .happiness {
@@ -147,12 +186,27 @@
   margin-right: 16px;
   border-radius: 10px;
 
+  @include respond(phone) {
+    height: 40px;
+    margin-top: -10px;
+  }
+
+  &__title {
+    @include respond(phone) {
+      font-size: 12px;
+    }
+  }
+
   .share-options {
     width: 240px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(phone) {
+      width: 150px;
+    }
 
     .option {
       width: 36px;
@@ -164,6 +218,11 @@
       transition: all 0.3s;
       cursor: pointer;
 
+      @include respond(phone) {
+        width: 24px;
+        height: 24px;
+      }
+
       &:hover {
         background-color: $notifactions-bc;
         transition: all 0.3s;
@@ -172,6 +231,11 @@
       &__icon {
         width: 24px;
         height: 24px;
+
+        @include respond(phone) {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -188,8 +252,24 @@
   border-radius: 10px;
   background-color: $notifactions-bc;
 
+  @include respond(phone) {
+    height: 34px;
+    margin-top: 13px;
+  }
+
   &__post {
     font-weight: bold;
-    color: #6e7074;
+    color: #fff;
   }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 235, 235, 0.6);
+  backdrop-filter: blur(0.3px);
+  z-index: 5;
 }
