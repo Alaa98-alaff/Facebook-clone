@@ -10,7 +10,7 @@ npm i
 npm start
 ```
 ## Used Technologies
-``` Nunjucks, Scss ```
+``` Nunjucks, Scss, Javascript, HTML ```
 
 ## Demo
 https://facebook-clone-alaa.netlify.app/
